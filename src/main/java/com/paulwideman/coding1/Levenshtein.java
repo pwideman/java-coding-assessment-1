@@ -7,6 +7,7 @@ import java.util.stream.IntStream;
 public class Levenshtein {
     public static Map<String, Integer> cache = new HashMap<>();
 
+    // Find the Levenshtein distance between two strings
     public static int calculateLevenshtein(String a, String b) {
         if (Math.min(a.length(), b.length()) == 0) {
             var result = Math.max(a.length(), b.length());

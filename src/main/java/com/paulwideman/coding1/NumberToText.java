@@ -1,6 +1,8 @@
 package com.paulwideman.coding1;
 
 public class NumberToText {
+    // Convert a number to its textual representation
+    // Still not the most concise or efficient implementation, but much better than the mess I did in the assessment
     public static String convertNumberToText(int number) {
         if (number < 1) {
             throw new IllegalArgumentException(String.format("Zero or negative numbers not supported: %s", number));
